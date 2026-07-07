@@ -1,0 +1,34 @@
+K-NEAREST NEIGHBORS (KNN) EVALUATION SUMMARY
+===========================================
+Model Architecture:
+- Parameter K (Neighbors): 11
+- Distance Metric: Minkowski (Euclidean, p=2)
+- Feature Scaling: StandardScaler
+
+Overall Classification Accuracy: 96.6667%
+
+Classification Report:
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor       1.00      0.90      0.95        10
+ Iris-virginica       0.91      1.00      0.95        10
+
+       accuracy                           0.97        30
+      macro avg       0.97      0.97      0.97        30
+   weighted avg       0.97      0.97      0.97        30
+
+
+Metric Explanations:
+1. Accuracy:
+   - Percentage of total correct predictions. Indicates overall model correctness.
+2. Precision:
+   - Ratio of true positive predictions to total predicted positives for a class.
+   - Measures the quality of the positive predictions (avoidance of false alarms).
+3. Recall:
+   - Ratio of true positive predictions to all actual positives in that class.
+   - Measures completeness (avoidance of missed detections).
+4. F1-Score:
+   - Harmonic mean of Precision and Recall. Evaluates balanced performance.
+5. Confusion Matrix:
+   - Tabular grid mapping actual classes against predictions. Highlights where confusion occurs.
